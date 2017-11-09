@@ -13,6 +13,7 @@
                  templateUrl: '/templates/home.html'
              });
 
+
      }
 
      angular
