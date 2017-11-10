@@ -1,3 +1,4 @@
   <h1>Bloc Chat</h1>
 
-  <p ng-repeat="room in home.rooms track by $index">{{ room.$value }}</p>
+  <p ng-repeat="room in home.rooms track by $index">{{ room.$value }}<button type="button" ng-click="home.deleteRoom()">Delete</button></p>
+  <button type="button" ng-click="home.addRoom()">New Room</button>
