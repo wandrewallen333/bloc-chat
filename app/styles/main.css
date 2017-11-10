@@ -1,1 +1,80 @@
+body {
+  background-color: #474B4F;
+}
 
+
+
+/* Sidebar Styling */
+
+.sidebar {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 20%;
+    height: 100%;
+    background-color: #222629;
+    z-index: 1;
+}
+
+.current-rooms {
+  color: white;
+  padding-left: 10px;
+  font-size: 20px;
+  font-family: 'Segoe UI Condensed','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+}
+
+.new-room-button {
+  color: white;
+  background-color: #86C232;
+  border-color: #86C232;
+  margin-left: 1%;
+  border-radius: 30px 30px 30px 30px;
+  font-family: 'Segoe UI Condensed','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+}
+
+.sidebar-header {
+    color: #86C232;
+    padding-left: 5px;
+    margin-bottom: 5px;
+    display: table;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.sidebar-header {
+    margin: 0 5px;
+}
+
+ .room-name {
+    border-bottom-color: white;
+    padding-left: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: #6B6E70;
+    font-family: 'Segoe UI Condensed','Segoe UI','Segoe WP',Tahoma,Arial,sans-serif;
+}
+
+.room-name:hover {
+  cursor: pointer;
+}
+
+/* Modal Styling */
+.modal {
+  text-align: center;
+}
+
+.cancel-button {
+  border: none;
+  background: #86C232;
+}
+
+.submit-button {
+  border: none;
+  background: #86C232;
+  margin-bottom: 2%;
+  margin-top: 1%;
+}
+
+.enter-new-room {
+  font-size: 12px;
+}

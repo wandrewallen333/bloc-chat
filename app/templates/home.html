@@ -1,4 +1,17 @@
-  <h1>Bloc Chat</h1>
+<div class="sidebar">
 
-  <p ng-repeat="room in home.rooms track by $index">{{ room.$value }}<button type="button" ng-click="home.deleteRoom()">Delete</button></p>
-  <button type="button" ng-click="home.addRoom()">New Room</button>
+  <div class="sidebar-header">
+    <h1 class="sidebar-title">Bloc Chat</h1>
+  </div>
+
+  <p class="current-rooms">Current Rooms:</p>
+  <div class="room-name" ng-repeat="room in home.rooms" ng-click="home.setRoom()">{{ room.$value }}
+  </div>
+<br>
+  <div class="new-room">
+  <button class="new-room-button" ng-click="home.addRoom()">New Room</button>
+</div>
+</div>
+<section id="chat-room">
+  <h1>{{ home.setRoom.$value }}<h1>
+  </section>
