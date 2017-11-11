@@ -5,13 +5,12 @@
   </div>
 
   <p class="current-rooms">Current Rooms:</p>
-  <div class="room-name" ng-repeat="room in home.rooms" ng-click="home.setRoom()">{{ room.$value }}
+  <div class="room-name" ng-repeat="room in home.rooms" ng-click="home.setRoom(room)">{{ room.$value }}
   </div>
 <br>
   <div class="new-room">
   <button class="new-room-button" ng-click="home.addRoom()">New Room</button>
 </div>
-</div>
-<section id="chat-room">
-  <h1>{{ home.setRoom.$value }}<h1>
-  </section>
+
+
+<h1 class="current-room">{{ home.currentRoom.$value }}</h1>
