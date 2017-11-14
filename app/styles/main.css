@@ -1,3 +1,5 @@
+
+/* Main Styling */
 body {
   background-color: #474B4F;
 }
@@ -5,7 +7,6 @@ body {
 
 
 /* Sidebar Styling */
-
 .sidebar {
     position: fixed;
     float:left;
@@ -84,6 +85,16 @@ body {
   font-size: 12px;
 }
 
+/* Cookies Styling */
+.username-submit {
+  border: none;
+  background: #86C232;
+  margin-bottom: 4%;
+}
+
+.text-prompt {
+  font-size: 10px;
+}
 
 /* Messages Styling */
 .messages {
@@ -95,11 +106,7 @@ body {
 .current-room {
   color: white;
   margin-left: 2%;
-
-
 }
-
-
 
 .messages-content .username {
   color: white;

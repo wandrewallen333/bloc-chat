@@ -1,11 +1,11 @@
 (function() {
-    function HomeCtrl(Room, $uibModal, Message) {
+    function HomeCtrl(Room, $uibModal, Message, $cookies) {
       this.rooms = Room.all;
       this.currentRoom = null;
 
       this.setRoom = function(room) {
         this.currentRoom = room;
-        this.messages = Message.getByRoomId(this.currentRoom.$id); 
+        this.messages = Message.getByRoomId(this.currentRoom.$id);
         //console.log(room.$value);
       };
 
@@ -20,5 +20,5 @@
 
     angular
         .module('blocChat')
-        .controller('HomeCtrl', ['Room', '$uibModal', 'Message', HomeCtrl]);
+        .controller('HomeCtrl', ['Room', '$uibModal', 'Message', '$cookies', HomeCtrl]);
 })();
