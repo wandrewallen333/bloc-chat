@@ -97,10 +97,29 @@ body {
 }
 
 /* Messages Styling */
-.messages {
+
+.room-header{
   position: fixed;
   left: 15%; top: 4%; right: 0%;
   font-size: 30px;
+  color: white;
+  margin-left: 2%;
+}
+
+.current-room {
+  position: fixed;
+  left: 15%; top: 4%; right: 0%;
+  font-size: 30px;
+}
+
+.messages-container {
+  position: fixed;
+  left: 15%; top: 15%; right: 60%;
+  padding-left: 2%;
+  margin-left: 5%;
+  border-radius: 15px 15px 15px 0px;
+  background-color: #86C232;
+
 }
 
 .current-room {
@@ -108,28 +127,52 @@ body {
   margin-left: 2%;
 }
 
-.messages-content .username {
+.messages-container .username {
   color: white;
-  margin-left: 2%;
-  width: 100%;
-  background-color: #6B6E70;
-}
-
-.messages-content .content {
-  color: white;
-  margin-left: 2%;
+  font-size: 15px;
+  margin-left: -6%;
+  margin-top:  0%;
   width: 100%;
 }
 
-.messages-content .sentAt {
-  color: white;
+.messages-container .content {
+  color: #6B6E70;
   margin-left: 2%;
   width: 100%;
-  background-color: #6B6E70;
+  padding-right: 20px;
 }
 
-.messages-content .roomId {
-  color: white;
-  margin-left: 2%;
+.messages-container .sentAt-roomId {
+  color: black;
+  font-size: 11px;
   width: 100%;
+  padding-left: 20px;
+}
+
+
+
+.message-input {
+    position: fixed;
+    border: none;
+    bottom:25px;
+    margin-left: 5px;
+    left:15%;
+    width: 75%;
+    height: 45px;
+}
+
+.send-message-button {
+  position: fixed;
+  font-size: 15px;
+  border: none;
+  color: white;
+  width: 120px;
+  height: 45px;
+  background-color: #86C232;
+  bottom: 25px;
+  border-radius: 0px 0px 0px 0px;
+  right: 1%
+}
+.send-message-button:hover {
+    filter: brightness(120%);
 }

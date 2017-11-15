@@ -5,25 +5,26 @@
   </div>
 
   <p class="current-rooms">Current Rooms:</p>
-  <div class="room-name" ng-repeat="room in home.rooms" ng-click="home.setRoom(room)">{{ room.$value }}
+  <div class="room-name" ng-repeat="room in home.rooms" ng-click="home.setRoom(room)" >{{ room.$value }}
   </div>
 <br>
   <div class="new-room">
   <button class="new-room-button" ng-click="home.addRoom()">New Room</button>
 </div>
 
-<div class="messages">
+<div class="messages-container">
   <div class="current-room">
     {{ home.currentRoom.$value }}
-
   </div>
-  <div class="messages-content" ng-repeat="message in home.messages">
-    <div class="username">username: {{ message.username }}</div>
-    <div class="content">content:  {{ message.content }}</div>
-    <div class="sentAt">sent at: {{ message.sentAt }}</div>
-    <div class="roomId">Room ID: {{ message.roomId }}</div> 
+  <div class="messages" ng-repeat="message in home.messages">
+    <div class="username">{{ message.username }}: </div>
+    <div class="content">{{ message.content }} </div>
+    <div class="sentAt-roomId">at: {{ message.sentAt + " in " + message.roomId }} </div>
     </div>
 
+<div class="message-bar">
+  <input type="text" class="message-input" id="textfield" placeholder=" Type message here..." ng-model="home.newMessage.content">
+  <button class="send-message-button" ng-click="home.sendMessage()">Send Message!</button>
 
   </div>
 </div>

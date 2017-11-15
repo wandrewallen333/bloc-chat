@@ -3,7 +3,7 @@
 
     this.cancel = function() {
       $uibModalInstance.close();
-      console.log("cancel");
+      
     };
 
     this.submit = function() {
