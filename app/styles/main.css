@@ -43,9 +43,7 @@ body {
     box-sizing: border-box;
 }
 
-.sidebar-header {
-    margin: 0 5px;
-}
+
 
  .room-name {
     border-bottom-color: white;
@@ -58,10 +56,6 @@ body {
 
 .room-name:hover {
   cursor: pointer;
-}
-
-.current-room {
-  margin-left: 200px;
 }
 
 /* Modal Styling */
@@ -107,18 +101,20 @@ body {
 }
 
 .current-room {
-  position: fixed;
-  left: 15%; top: 4%; right: 0%;
+  margin-left: 2%;
   font-size: 30px;
 }
 
 .messages-container {
-  position: fixed;
-  left: 15%; top: 15%; right: 60%;
-  padding-left: 2%;
-  margin-left: 5%;
+  width: 75%;
+  max-height: 89vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  margin-left: 20%;
+  margin-top: 10px;
   border-radius: 15px 15px 15px 0px;
   background-color: #86C232;
+
 
 }
 
@@ -130,7 +126,7 @@ body {
 .messages-container .username {
   color: white;
   font-size: 15px;
-  margin-left: -6%;
+  margin-left: 15px;
   margin-top:  0%;
   width: 100%;
 }
@@ -139,7 +135,8 @@ body {
   color: #6B6E70;
   margin-left: 2%;
   width: 100%;
-  padding-right: 20px;
+  padding-right: 30px;
+
 }
 
 .messages-container .sentAt-roomId {
@@ -175,4 +172,9 @@ body {
 }
 .send-message-button:hover {
     filter: brightness(120%);
+}
+
+.messages {
+  border-bottom: 10px solid #474B4F;
+  /*margin-right: 50%; */
 }

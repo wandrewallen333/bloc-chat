@@ -1,15 +1,16 @@
 <div class="sidebar">
 
   <div class="sidebar-header">
-    <h1 class="sidebar-title">Bloc Chat</h1>
+    <h1 class="sidebar-title">Track Chat</h1>
   </div>
 
-  <p class="current-rooms">Current Rooms:</p>
+  <p class="current-rooms">Tracks in Progress</p>
   <div class="room-name" ng-repeat="room in home.rooms" ng-click="home.setRoom(room)" >{{ room.$value }}
   </div>
 <br>
   <div class="new-room">
-  <button class="new-room-button" ng-click="home.addRoom()">New Room</button>
+  <button class="new-room-button" ng-click="home.addRoom()">New track</button>
+</div>
 </div>
 
 <div class="messages-container">
