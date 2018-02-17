@@ -18,14 +18,16 @@
         })
       };
 
+
+
       this.sendMessage = function() {
         this.newMessage.roomId = this.currentRoom.$id;
         this.newMessage.sentAt = firebase.database.ServerValue.TIMESTAMP;
         this.newMessage.username = $cookies.get('blocChatCurrentUser');
         document.getElementById("textfield").value = "";
         Message.send(this.newMessage);
-       //console.log("fish");
       };
+
 
 
 

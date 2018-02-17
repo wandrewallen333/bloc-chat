@@ -11,13 +11,12 @@
     };
 
     Message.send = function(newMessage) {
-     messages.$add(newMessage); 
+     messages.$add(newMessage);
     };
 
     return Message;
-
-
   }
+
 
   angular
     .module('blocChat')

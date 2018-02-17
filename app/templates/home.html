@@ -22,10 +22,11 @@
     <div class="content">{{ message.content }} </div>
     <div class="sentAt-roomId">at: {{ message.sentAt + " in " + message.roomId }} </div>
     </div>
-
+<form>
 <div class="message-bar">
   <input type="text" class="message-input" id="textfield" placeholder=" Type message here..." ng-model="home.newMessage.content">
   <button class="send-message-button" ng-click="home.sendMessage()">Send Message!</button>
 
   </div>
+</form>
 </div>
